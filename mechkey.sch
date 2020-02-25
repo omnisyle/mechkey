@@ -1,0 +1,663 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L keyboard_parts:ATMEGA32U4 U1
+U 1 1 5E4B5820
+P 3000 2850
+F 0 "U1" H 3025 4187 60  0000 C CNN
+F 1 "ATMEGA32U4" H 3025 4081 60  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 3000 2850 60  0001 C CNN
+F 3 "" H 3000 2850 60  0000 C CNN
+	1    3000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C2
+U 1 1 5E4BB3B8
+P 1600 4100
+F 0 "C2" H 1692 4146 50  0000 L CNN
+F 1 "22p" H 1692 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1600 4100 50  0001 C CNN
+F 3 "~" H 1600 4100 50  0001 C CNN
+	1    1600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0101
+U 1 1 5E4BC44F
+P 1300 4250
+F 0 "#PWR0101" H 1300 4300 20  0001 C CNN
+F 1 "GND" H 1300 4150 30  0000 C CNN
+F 2 "" H 1300 4250 60  0000 C CNN
+F 3 "" H 1300 4250 60  0000 C CNN
+	1    1300 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:XTAL_GND X1
+U 1 1 5E4B83C5
+P 1300 3600
+F 0 "X1" H 1300 3750 60  0000 C CNN
+F 1 "XTAL_GND" H 1300 3350 60  0000 C CNN
+F 2 "Crystal:Crystal_SMD_SeikoEpson_FA238-4Pin_3.2x2.5mm_HandSoldering" H 1300 3600 60  0001 C CNN
+F 3 "" H 1300 3600 60  0000 C CNN
+	1    1300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4050 1600 4000
+Wire Wire Line
+	1950 3400 1600 3400
+Wire Wire Line
+	1600 3400 1600 3600
+Wire Wire Line
+	1950 3300 1000 3300
+Wire Wire Line
+	1000 3300 1000 3600
+Wire Wire Line
+	1300 3800 1300 4200
+Connection ~ 1300 4200
+Wire Wire Line
+	1300 4200 1300 4250
+Wire Wire Line
+	1600 3600 1600 4000
+Connection ~ 1600 3600
+Connection ~ 1600 4000
+Wire Wire Line
+	1600 4200 1300 4200
+$Comp
+L Device:C_Small C1
+U 1 1 5E4BA97F
+P 1000 4100
+F 0 "C1" H 1092 4146 50  0000 L CNN
+F 1 "22p" H 1092 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1000 4100 50  0001 C CNN
+F 3 "~" H 1000 4100 50  0001 C CNN
+	1    1000 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3600 1000 4000
+Connection ~ 1000 3600
+Connection ~ 1000 4000
+Wire Wire Line
+	1000 4000 1000 4050
+Wire Wire Line
+	1000 4200 1300 4200
+$Comp
+L power:VCC #PWR0102
+U 1 1 5E4C7920
+P 700 750
+F 0 "#PWR0102" H 700 600 50  0001 C CNN
+F 1 "VCC" H 717 923 50  0000 C CNN
+F 2 "" H 700 750 50  0001 C CNN
+F 3 "" H 700 750 50  0001 C CNN
+	1    700  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5E4C8B0E
+P 700 1050
+F 0 "C3" H 750 1150 50  0000 L CNN
+F 1 "0.1u" H 750 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 700 1050 50  0001 C CNN
+F 3 "~" H 700 1050 50  0001 C CNN
+	1    700  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5E4C92B1
+P 950 1050
+F 0 "C4" H 1000 1150 50  0000 L CNN
+F 1 "0.1u" H 1000 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 950 1050 50  0001 C CNN
+F 3 "~" H 950 1050 50  0001 C CNN
+	1    950  1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5E4C9849
+P 1200 1050
+F 0 "C5" H 1250 1150 50  0000 L CNN
+F 1 "0.1u" H 1250 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1200 1050 50  0001 C CNN
+F 3 "~" H 1200 1050 50  0001 C CNN
+	1    1200 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5E4C9C15
+P 1450 1050
+F 0 "C6" H 1500 1150 50  0000 L CNN
+F 1 "0.1u" H 1500 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1450 1050 50  0001 C CNN
+F 3 "~" H 1450 1050 50  0001 C CNN
+	1    1450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C7
+U 1 1 5E4CA123
+P 1700 1050
+F 0 "C7" H 1750 1150 50  0000 L CNN
+F 1 "4.7u" H 1750 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 1050 50  0001 C CNN
+F 3 "~" H 1700 1050 50  0001 C CNN
+	1    1700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0103
+U 1 1 5E4D001F
+P 700 1350
+F 0 "#PWR0103" H 700 1400 20  0001 C CNN
+F 1 "GND" H 700 1250 30  0000 C CNN
+F 2 "" H 700 1350 60  0000 C CNN
+F 3 "" H 700 1350 60  0000 C CNN
+	1    700  1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  750  700  950 
+Wire Wire Line
+	700  950  950  950 
+Connection ~ 700  950 
+Wire Wire Line
+	950  950  1200 950 
+Connection ~ 950  950 
+Wire Wire Line
+	1450 950  1200 950 
+Connection ~ 1200 950 
+Wire Wire Line
+	1450 950  1700 950 
+Connection ~ 1450 950 
+Wire Wire Line
+	1700 1150 1450 1150
+Wire Wire Line
+	1450 1150 1200 1150
+Connection ~ 1450 1150
+Wire Wire Line
+	1200 1150 950  1150
+Connection ~ 1200 1150
+Wire Wire Line
+	950  1150 700  1150
+Connection ~ 950  1150
+Wire Wire Line
+	700  1150 700  1350
+Connection ~ 700  1150
+$Comp
+L keyboard_parts:SW_PUSH SW1
+U 1 1 5E4D233B
+P 1300 3000
+F 0 "SW1" H 1300 3150 50  0000 C CNN
+F 1 "SW_PUSH" H 1300 2900 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_TL3342" H 1300 3000 60  0001 C CNN
+F 3 "" H 1300 3000 60  0000 C CNN
+	1    1300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0104
+U 1 1 5E4D3251
+P 850 3000
+F 0 "#PWR0104" H 850 3050 20  0001 C CNN
+F 1 "GND" V 900 2950 30  0000 L CNN
+F 2 "" H 850 3000 60  0000 C CNN
+F 3 "" H 850 3000 60  0000 C CNN
+	1    850  3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR0105
+U 1 1 5E4D3F5A
+P 1000 2750
+F 0 "#PWR0105" H 1000 2600 50  0001 C CNN
+F 1 "VCC" V 1018 2877 50  0000 L CNN
+F 2 "" H 1000 2750 50  0001 C CNN
+F 3 "" H 1000 2750 50  0001 C CNN
+	1    1000 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E4D4DB7
+P 1300 2750
+F 0 "R1" V 1200 2750 50  0000 C CNN
+F 1 "10k" V 1300 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1230 2750 50  0001 C CNN
+F 3 "~" H 1300 2750 50  0001 C CNN
+	1    1300 2750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1000 2750 1150 2750
+Wire Wire Line
+	1450 2750 1600 2750
+Wire Wire Line
+	1600 2750 1600 3000
+Wire Wire Line
+	1600 3000 1950 3000
+Connection ~ 1600 3000
+Wire Wire Line
+	1000 3000 850  3000
+$Comp
+L Device:R R2
+U 1 1 5E4D6CB3
+P 4750 2900
+F 0 "R2" V 4650 2900 50  0000 C CNN
+F 1 "10k" V 4750 2900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4680 2900 50  0001 C CNN
+F 3 "~" H 4750 2900 50  0001 C CNN
+	1    4750 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0106
+U 1 1 5E4D7803
+P 5050 2900
+F 0 "#PWR0106" H 5050 2950 20  0001 C CNN
+F 1 "GND" H 5000 2800 30  0000 L CNN
+F 2 "" H 5050 2900 60  0000 C CNN
+F 3 "" H 5050 2900 60  0000 C CNN
+	1    5050 2900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4900 2900 5050 2900
+$Comp
+L keyboard_parts:USB_mini_micro_B J1
+U 1 1 5E4D8FE8
+P 1000 2050
+F 0 "J1" H 887 2341 60  0000 C CNN
+F 1 "USB_mini_micro_B" H 850 2300 60  0001 C CNN
+F 2 "keyboard_parts.pretty:USB_miniB_hirose_5S8" H 950 2050 60  0001 C CNN
+F 3 "" H 950 2050 60  0000 C CNN
+	1    1000 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0107
+U 1 1 5E4DDB8C
+P 1300 1750
+F 0 "#PWR0107" H 1300 1600 50  0001 C CNN
+F 1 "VCC" H 1317 1923 50  0000 C CNN
+F 2 "" H 1300 1750 50  0001 C CNN
+F 3 "" H 1300 1750 50  0001 C CNN
+	1    1300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E4DEC31
+P 1550 2100
+F 0 "R4" V 1550 2050 39  0000 C CNN
+F 1 "22" V 1550 2150 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1480 2100 50  0001 C CNN
+F 3 "~" H 1550 2100 50  0001 C CNN
+	1    1550 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E4DE3AD
+P 1550 2000
+F 0 "R3" V 1550 1950 39  0000 C CNN
+F 1 "22" V 1550 2050 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1480 2000 50  0001 C CNN
+F 3 "~" H 1550 2000 50  0001 C CNN
+	1    1550 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L keyboard_parts:GND #PWR0108
+U 1 1 5E4DFDFA
+P 1350 2200
+F 0 "#PWR0108" H 1350 2250 20  0001 C CNN
+F 1 "GND" H 1300 2100 30  0000 L CNN
+F 2 "" H 1350 2200 60  0000 C CNN
+F 3 "" H 1350 2200 60  0000 C CNN
+	1    1350 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C8
+U 1 1 5E4E082B
+P 1700 2300
+F 0 "C8" V 1750 2400 39  0000 C CNN
+F 1 "1u" V 1750 2200 39  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1700 2300 50  0001 C CNN
+F 3 "~" H 1700 2300 50  0001 C CNN
+	1    1700 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 1750 1300 1900
+Wire Wire Line
+	1300 1900 1950 1900
+Wire Wire Line
+	1700 2000 1950 2000
+Wire Wire Line
+	1700 2100 1950 2100
+Wire Wire Line
+	1950 2300 1800 2300
+Connection ~ 1450 2200
+Wire Wire Line
+	1450 2200 1450 2300
+Wire Wire Line
+	1450 2200 1950 2200
+Wire Wire Line
+	1450 2300 1600 2300
+Wire Wire Line
+	1450 2200 1350 2200
+Wire Wire Line
+	1150 2300 1250 2300
+Connection ~ 1450 2300
+Wire Wire Line
+	1150 2100 1400 2100
+Wire Wire Line
+	1150 2000 1400 2000
+Wire Wire Line
+	1150 1900 1300 1900
+Connection ~ 1300 1900
+Wire Wire Line
+	1150 2400 1250 2400
+Wire Wire Line
+	1250 2400 1250 2300
+Connection ~ 1250 2300
+Wire Wire Line
+	1250 2300 1450 2300
+$Comp
+L power:VCC #PWR0109
+U 1 1 5E50267C
+P 4450 1800
+F 0 "#PWR0109" H 4450 1650 50  0001 C CNN
+F 1 "VCC" H 4450 2000 50  0000 C CNN
+F 2 "" H 4450 1800 50  0001 C CNN
+F 3 "" H 4450 1800 50  0001 C CNN
+	1    4450 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 1800 4450 1800
+$Comp
+L power:VCC #PWR0110
+U 1 1 5E5042B0
+P 4300 2800
+F 0 "#PWR0110" H 4300 2650 50  0001 C CNN
+F 1 "VCC" H 4300 2950 50  0000 C CNN
+F 2 "" H 4300 2800 50  0001 C CNN
+F 3 "" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4100 2900 4600 2900
+Wire Wire Line
+	4300 2800 4100 2800
+$Comp
+L keyboard_parts:GND #PWR0111
+U 1 1 5E509D5C
+P 4550 2700
+F 0 "#PWR0111" H 4550 2750 20  0001 C CNN
+F 1 "GND" H 4500 2600 30  0000 L CNN
+F 2 "" H 4550 2700 60  0000 C CNN
+F 3 "" H 4550 2700 60  0000 C CNN
+	1    4550 2700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4550 2700 4100 2700
+$Comp
+L power:VCC #PWR0112
+U 1 1 5E50BB00
+P 4350 3800
+F 0 "#PWR0112" H 4350 3650 50  0001 C CNN
+F 1 "VCC" H 4350 3950 50  0000 C CNN
+F 2 "" H 4350 3800 50  0001 C CNN
+F 3 "" H 4350 3800 50  0001 C CNN
+	1    4350 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 3800 4100 3800
+$Comp
+L keyboard_parts:GND #PWR0113
+U 1 1 5E50CED6
+P 4300 3900
+F 0 "#PWR0113" H 4300 3950 20  0001 C CNN
+F 1 "GND" H 4250 3800 30  0000 L CNN
+F 2 "" H 4300 3900 60  0000 C CNN
+F 3 "" H 4300 3900 60  0000 C CNN
+	1    4300 3900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 3900 4100 3900
+$Comp
+L keyboard_parts:KEYSW K1
+U 1 1 5E4CBD46
+P 5850 2150
+F 0 "K1" H 5850 2150 60  0000 C CNN
+F 1 "KEYSW" H 5850 2050 60  0001 C CNN
+F 2 "keebs.pretty:Mx_Alps_100" H 5850 2150 60  0001 C CNN
+F 3 "" H 5850 2150 60  0000 C CNN
+	1    5850 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D1
+U 1 1 5E4CD392
+P 5550 2550
+F 0 "D1" V 5596 2471 50  0000 R CNN
+F 1 "D" V 5505 2471 50  0000 R CNN
+F 2 "keyboard_parts.pretty:D_axial" H 5550 2550 50  0001 C CNN
+F 3 "~" H 5550 2550 50  0001 C CNN
+	1    5550 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 2150 5550 2400
+$Comp
+L keyboard_parts:KEYSW K2
+U 1 1 5E4D2330
+P 6700 2150
+F 0 "K2" H 6700 2150 60  0000 C CNN
+F 1 "KEYSW" H 6700 2050 60  0001 C CNN
+F 2 "keebs.pretty:Mx_Alps_100" H 6700 2150 60  0001 C CNN
+F 3 "" H 6700 2150 60  0000 C CNN
+	1    6700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5E4D2336
+P 6400 2550
+F 0 "D2" V 6446 2471 50  0000 R CNN
+F 1 "D" V 6355 2471 50  0000 R CNN
+F 2 "keyboard_parts.pretty:D_axial" H 6400 2550 50  0001 C CNN
+F 3 "~" H 6400 2550 50  0001 C CNN
+	1    6400 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 2150 6400 2400
+$Comp
+L keyboard_parts:KEYSW K3
+U 1 1 5E4D36F4
+P 5850 2950
+F 0 "K3" H 5850 2950 60  0000 C CNN
+F 1 "KEYSW" H 5850 2850 60  0001 C CNN
+F 2 "keebs.pretty:Mx_Alps_100" H 5850 2950 60  0001 C CNN
+F 3 "" H 5850 2950 60  0000 C CNN
+	1    5850 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D3
+U 1 1 5E4D36FA
+P 5550 3350
+F 0 "D3" V 5596 3271 50  0000 R CNN
+F 1 "D" V 5505 3271 50  0000 R CNN
+F 2 "keyboard_parts.pretty:D_axial" H 5550 3350 50  0001 C CNN
+F 3 "~" H 5550 3350 50  0001 C CNN
+	1    5550 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 2950 5550 3200
+$Comp
+L keyboard_parts:KEYSW K4
+U 1 1 5E4D4E8E
+P 6700 2950
+F 0 "K4" H 6700 2950 60  0000 C CNN
+F 1 "KEYSW" H 6700 2850 60  0001 C CNN
+F 2 "keebs.pretty:Mx_Alps_100" H 6700 2950 60  0001 C CNN
+F 3 "" H 6700 2950 60  0000 C CNN
+	1    6700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D D4
+U 1 1 5E4D4E94
+P 6400 3350
+F 0 "D4" V 6446 3271 50  0000 R CNN
+F 1 "D" V 6355 3271 50  0000 R CNN
+F 2 "keyboard_parts.pretty:D_axial" H 6400 3350 50  0001 C CNN
+F 3 "~" H 6400 3350 50  0001 C CNN
+	1    6400 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6400 2950 6400 3200
+Wire Wire Line
+	6150 2150 6150 2950
+Wire Wire Line
+	7000 2150 7000 2950
+Wire Wire Line
+	5550 3500 6400 3500
+Text Label 4100 2100 0    50   ~ 0
+row0
+Text Label 4100 2200 0    50   ~ 0
+row1
+Text Label 4100 2300 0    50   ~ 0
+col0
+Text Label 4100 2400 0    50   ~ 0
+col1
+Text Label 5300 2700 0    50   ~ 0
+row0
+Wire Wire Line
+	5550 2700 6400 2700
+Wire Wire Line
+	5300 2700 5550 2700
+Connection ~ 5550 2700
+Text Label 5350 3500 0    50   ~ 0
+row1
+Wire Wire Line
+	5550 3500 5350 3500
+Connection ~ 5550 3500
+Text Label 6150 1950 0    50   ~ 0
+col0
+Wire Wire Line
+	6150 2150 6150 1950
+Connection ~ 6150 2150
+Text Label 7000 1950 0    50   ~ 0
+col1
+Wire Wire Line
+	7000 2150 7000 1950
+Connection ~ 7000 2150
+NoConn ~ 4100 2000
+$Comp
+L keyboard_parts:GND #PWR0114
+U 1 1 5E4E89D5
+P 4350 1900
+F 0 "#PWR0114" H 4350 1950 20  0001 C CNN
+F 1 "GND" H 4300 1800 30  0000 L CNN
+F 2 "" H 4350 1900 60  0000 C CNN
+F 3 "" H 4350 1900 60  0000 C CNN
+	1    4350 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4100 1900 4350 1900
+NoConn ~ 4100 2500
+NoConn ~ 4100 2600
+NoConn ~ 4100 3000
+NoConn ~ 4100 3100
+NoConn ~ 4100 3200
+NoConn ~ 4100 3300
+NoConn ~ 4100 3400
+NoConn ~ 4100 3500
+NoConn ~ 4100 3600
+NoConn ~ 4100 3700
+NoConn ~ 1950 3900
+NoConn ~ 1950 3800
+NoConn ~ 1950 3700
+NoConn ~ 1950 3600
+NoConn ~ 1950 3500
+$Comp
+L keyboard_parts:GND #PWR0115
+U 1 1 5E4F9846
+P 1700 3200
+F 0 "#PWR0115" H 1700 3250 20  0001 C CNN
+F 1 "GND" H 1650 3100 30  0000 L CNN
+F 2 "" H 1700 3200 60  0000 C CNN
+F 3 "" H 1700 3200 60  0000 C CNN
+	1    1700 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1950 3200 1700 3200
+$Comp
+L power:VCC #PWR0116
+U 1 1 5E4FB7A0
+P 1750 3100
+F 0 "#PWR0116" H 1750 2950 50  0001 C CNN
+F 1 "VCC" H 1700 3300 39  0000 L CNN
+F 2 "" H 1750 3100 50  0001 C CNN
+F 3 "" H 1750 3100 50  0001 C CNN
+	1    1750 3100
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 3100 1750 3100
+NoConn ~ 1950 2900
+NoConn ~ 1950 2800
+NoConn ~ 1950 2700
+NoConn ~ 1950 2600
+NoConn ~ 1950 2500
+$Comp
+L power:VCC #PWR0117
+U 1 1 5E503123
+P 1650 2550
+F 0 "#PWR0117" H 1650 2400 50  0001 C CNN
+F 1 "VCC" H 1600 2700 50  0000 L CNN
+F 2 "" H 1650 2550 50  0001 C CNN
+F 3 "" H 1650 2550 50  0001 C CNN
+	1    1650 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1950 2400 1800 2400
+Wire Wire Line
+	1800 2400 1800 2550
+Wire Wire Line
+	1800 2550 1650 2550
+NoConn ~ 1950 1800
+$EndSCHEMATC
